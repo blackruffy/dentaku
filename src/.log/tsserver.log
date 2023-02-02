@@ -1,0 +1,16 @@
+Info 0    [22:48:39.059] Starting TS Server
+Info 1    [22:48:39.060] Version: 4.7.2
+Info 2    [22:48:39.060] Arguments: /Users/tkubo/.nodebrew/node/v16.15.1/bin/node /Users/tkubo/.emacs.d/.cache/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js --logFile /Users/tkubo/Private/lessons/dentaku/src/.log/tsserver.log --logVerbosity info --cancellationPipeName /private/var/folders/xd/dszc6hln53920_ttllsm_bf00000gp/T/7ad006828036d36b19a7b22342841079/tscancellation*
+Info 3    [22:48:39.060] Platform: darwin NodeVersion: 16 CaseSensitive: false
+Info 4    [22:48:39.060] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [22:48:39.066] Format host information updated
+Info 6    [22:48:39.072] Search path: /Users/tkubo/Private/lessons/dentaku/src
+Info 7    [22:48:39.072] For info: /Users/tkubo/Private/lessons/dentaku/src/index.ts :: No config files found.
+Info 8    [22:48:39.074] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 9    [22:48:39.811] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 736.9255000054836ms
+Info 10   [22:48:39.811] Project '/dev/null/inferredProject1*' (Inferred)
+Info 11   [22:48:39.811] 	Files (188)
+
+Info 12   [22:48:39.811] -----------------------------------------------
+Info 13   [22:48:39.814] Search path: /Users/tkubo/Private/lessons/dentaku/src
+Info 14   [22:48:39.814] For info: /Users/tkubo/Private/lessons/dentaku/src/parser.ts :: No config files found.

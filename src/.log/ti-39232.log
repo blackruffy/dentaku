@@ -1,0 +1,93 @@
+[22:48:39.173] Global cache location '/Users/tkubo/Library/Caches/typescript/4.7', safe file path '/users/tkubo/.emacs.d/.cache/lsp/npm/typescript/lib/node_modules/typescript/lib/typingsafelist.json', types map path /users/tkubo/.emacs.d/.cache/lsp/npm/typescript/lib/node_modules/typescript/lib/typesmap.json
+[22:48:39.174] Processing cache location '/Users/tkubo/Library/Caches/typescript/4.7'
+[22:48:39.175] Trying to find '/Users/tkubo/Library/Caches/typescript/4.7/package.json'...
+[22:48:39.180] Loaded content of '/Users/tkubo/Library/Caches/typescript/4.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.629"},"devDependencies":{"@types/babel__code-frame":"^7.0.3","@types/babel__core":"^7.1.19","@types/babel__helper-plugin-utils":"^7.10.0","@types/babel__register":"^7.17.0","@types/babel__traverse":"^7.18.0","@types/bluebird":"^3.5.36","@types/body-parser":"^1.19.2","@types/cache-manager":"^4.0.0","@types/common-tags":"^1.8.1","@types/compression":"^1.7.2","@types/cookie":"^0.5.1","@types/copyfiles":"^2.4.1","@types/core-js":"^2.5.5","@types/cors":"^2.8.12","@types/css.escape":"^1.5.0","@types/debug":"^4.1.7","@types/detect-port":"^1.3.2","@types/enhanced-resolve":"^3.0.7","@types/eslint":"^8.4.10","@types/eslint-config-prettier":"^6.11.0","@types/eslint-plugin-prettier":"^3.1.0","@types/event-source-polyfill":"^1.0.0","@types/express":"^4.17.13","@types/express-http-proxy":"^1.6.3","@types/fetch-mock":"^7.3.5","@types/file-loader":"^5.0.1","@types/find-cache-dir":"^3.2.1","@types/fs-extra":"^9.0.13","@types/gatsbyjs__reach-router":"^1.3.0","@types/glob":"^7.2.0","@types/got":"^9.6.12","@types/http-proxy":"^1.17.9","@types/invariant":"^2.2.35","@types/is-relative":"^1.0.0","@types/istanbul-lib-coverage":"^2.0.4","@types/istanbul-lib-report":"^3.0.0","@types/jest":"^29.4.0","@types/lodash":"^4.14.182","@types/mdx-js__react":"^1.5.5","@types/memoizee":"^0.4.8","@types/micromatch":"^4.0.2","@types/mime":"^3.0.1","@types/multer":"^1.4.7","@types/node-fetch":"^2.6.2","@types/normalize-path":"^3.0.0","@types/parseurl":"^1.3.1","@types/physical-cpu-count":"^2.0.0","@types/platform":"^1.3.4","@types/postcss-flexbugs-fixes":"^4.2.1","@types/prettier":"^2.7.2","@types/prompts":"^2.0.14","@types/prop-types":"^15.7.5","@types/react":"^18.0.15","@types/react-dev-utils":"^9.0.11","@types/react-dom":"^18.0.6","@types/react-helmet":"^6.1.5","@types/react-native":"^0.69.5","@types/react-refresh":"^0.14.0","@types/reactcss":"^1.2.6","@types/rimraf":"^3.0.2","@types/semver":"^7.3.10","@types/signal-exit":"^3.0.1","@types/stack-trace":"^0.0.30","@types/string-similarity":"^4.0.0","@types/tmp":"^0.2.3","@types/uuid":"^9.0.0","@types/webpack":"^5.28.0","@types/webpack-stats-plugin":"^0.3.2","@types/webpack-virtual-modules":"^0.1.1","@types/yargs-parser":"^21.0.0","@types/zipkin-javascript-opentracing":"^1.6.0"}}
+[22:48:39.180] Loaded content of '/Users/tkubo/Library/Caches/typescript/4.7/package-lock.json'
+[22:48:39.187] Adding entry into typings cache: 'babel__code-frame' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/babel__code-frame/index.d.ts'
+[22:48:39.189] Adding entry into typings cache: 'babel__core' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/babel__core/index.d.ts'
+[22:48:39.191] Adding entry into typings cache: 'babel__helper-plugin-utils' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/babel__helper-plugin-utils/index.d.ts'
+[22:48:39.191] Adding entry into typings cache: 'babel__register' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/babel__register/index.d.ts'
+[22:48:39.193] Adding entry into typings cache: 'babel__traverse' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/babel__traverse/index.d.ts'
+[22:48:39.193] Adding entry into typings cache: 'bluebird' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/bluebird/index.d.ts'
+[22:48:39.194] Adding entry into typings cache: 'body-parser' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/body-parser/index.d.ts'
+[22:48:39.195] Adding entry into typings cache: 'cache-manager' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/cache-manager/index.d.ts'
+[22:48:39.197] Adding entry into typings cache: 'common-tags' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/common-tags/index.d.ts'
+[22:48:39.198] Adding entry into typings cache: 'compression' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/compression/index.d.ts'
+[22:48:39.198] Adding entry into typings cache: 'cookie' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/cookie/index.d.ts'
+[22:48:39.199] Adding entry into typings cache: 'copyfiles' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/copyfiles/index.d.ts'
+[22:48:39.200] Adding entry into typings cache: 'core-js' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/core-js/index.d.ts'
+[22:48:39.202] Adding entry into typings cache: 'cors' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/cors/index.d.ts'
+[22:48:39.204] Adding entry into typings cache: 'css.escape' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/css.escape/index.d.ts'
+[22:48:39.205] Adding entry into typings cache: 'debug' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/debug/index.d.ts'
+[22:48:39.206] Adding entry into typings cache: 'detect-port' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/detect-port/index.d.ts'
+[22:48:39.208] Adding entry into typings cache: 'enhanced-resolve' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/enhanced-resolve/types.d.ts'
+[22:48:39.209] Adding entry into typings cache: 'eslint' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/eslint/index.d.ts'
+[22:48:39.211] Adding entry into typings cache: 'eslint-config-prettier' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/eslint-config-prettier/index.d.ts'
+[22:48:39.212] Adding entry into typings cache: 'eslint-plugin-prettier' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/eslint-plugin-prettier/index.d.ts'
+[22:48:39.213] Adding entry into typings cache: 'event-source-polyfill' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/event-source-polyfill/index.d.ts'
+[22:48:39.214] Adding entry into typings cache: 'express' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/express/index.d.ts'
+[22:48:39.214] Adding entry into typings cache: 'express-http-proxy' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/express-http-proxy/index.d.ts'
+[22:48:39.216] Adding entry into typings cache: 'fetch-mock' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/fetch-mock/index.d.ts'
+[22:48:39.219] Adding entry into typings cache: 'file-loader' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/file-loader/index.d.ts'
+[22:48:39.220] Adding entry into typings cache: 'find-cache-dir' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/find-cache-dir/index.d.ts'
+[22:48:39.221] Adding entry into typings cache: 'fs-extra' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/fs-extra/index.d.ts'
+[22:48:39.222] Adding entry into typings cache: 'gatsbyjs__reach-router' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/gatsbyjs__reach-router/index.d.ts'
+[22:48:39.223] Adding entry into typings cache: 'glob' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/glob/index.d.ts'
+[22:48:39.224] Adding entry into typings cache: 'got' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/got/index.d.ts'
+[22:48:39.226] Adding entry into typings cache: 'http-proxy' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/http-proxy/index.d.ts'
+[22:48:39.227] Adding entry into typings cache: 'invariant' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/invariant/index.d.ts'
+[22:48:39.228] Adding entry into typings cache: 'is-relative' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/is-relative/index.d.ts'
+[22:48:39.230] Adding entry into typings cache: 'istanbul-lib-coverage' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/istanbul-lib-coverage/index.d.ts'
+[22:48:39.231] Adding entry into typings cache: 'istanbul-lib-report' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/istanbul-lib-report/index.d.ts'
+[22:48:39.232] Adding entry into typings cache: 'jest' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/jest/index.d.ts'
+[22:48:39.234] Adding entry into typings cache: 'lodash' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/lodash/index.d.ts'
+[22:48:39.235] Adding entry into typings cache: 'mdx-js__react' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/mdx-js__react/index.d.ts'
+[22:48:39.235] Adding entry into typings cache: 'memoizee' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/memoizee/index.d.ts'
+[22:48:39.237] Adding entry into typings cache: 'micromatch' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/micromatch/index.d.ts'
+[22:48:39.237] Adding entry into typings cache: 'mime' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/mime/index.d.ts'
+[22:48:39.238] Adding entry into typings cache: 'multer' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/multer/index.d.ts'
+[22:48:39.239] Adding entry into typings cache: 'node-fetch' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/node-fetch/index.d.ts'
+[22:48:39.241] Adding entry into typings cache: 'normalize-path' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/normalize-path/index.d.ts'
+[22:48:39.241] Adding entry into typings cache: 'parseurl' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/parseurl/index.d.ts'
+[22:48:39.242] Adding entry into typings cache: 'physical-cpu-count' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/physical-cpu-count/index.d.ts'
+[22:48:39.242] Adding entry into typings cache: 'platform' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/platform/index.d.ts'
+[22:48:39.243] Adding entry into typings cache: 'postcss-flexbugs-fixes' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/postcss-flexbugs-fixes/index.d.ts'
+[22:48:39.243] Adding entry into typings cache: 'prettier' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/prettier/index.d.ts'
+[22:48:39.244] Adding entry into typings cache: 'prompts' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/prompts/index.d.ts'
+[22:48:39.245] Adding entry into typings cache: 'prop-types' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/prop-types/index.d.ts'
+[22:48:39.247] Adding entry into typings cache: 'react' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/react/index.d.ts'
+[22:48:39.247] Adding entry into typings cache: 'react-dev-utils' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/react-dev-utils/index.d.ts'
+[22:48:39.249] Adding entry into typings cache: 'react-dom' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/react-dom/index.d.ts'
+[22:48:39.249] Adding entry into typings cache: 'react-helmet' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/react-helmet/index.d.ts'
+[22:48:39.251] Adding entry into typings cache: 'react-native' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/react-native/index.d.ts'
+[22:48:39.251] Adding entry into typings cache: 'react-refresh' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/react-refresh/index.d.ts'
+[22:48:39.252] Adding entry into typings cache: 'reactcss' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/reactcss/index.d.ts'
+[22:48:39.252] Adding entry into typings cache: 'rimraf' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/rimraf/index.d.ts'
+[22:48:39.253] Adding entry into typings cache: 'semver' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/semver/index.d.ts'
+[22:48:39.254] Adding entry into typings cache: 'signal-exit' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/signal-exit/index.d.ts'
+[22:48:39.255] Adding entry into typings cache: 'stack-trace' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/stack-trace/index.d.ts'
+[22:48:39.256] Adding entry into typings cache: 'string-similarity' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/string-similarity/index.d.ts'
+[22:48:39.256] Adding entry into typings cache: 'tmp' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/tmp/index.d.ts'
+[22:48:39.257] Adding entry into typings cache: 'uuid' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/uuid/index.d.ts'
+[22:48:39.258] Adding entry into typings cache: 'webpack' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/webpack/types.d.ts'
+[22:48:39.259] Adding entry into typings cache: 'webpack-stats-plugin' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/webpack-stats-plugin/index.d.ts'
+[22:48:39.259] Adding entry into typings cache: 'webpack-virtual-modules' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/webpack-virtual-modules/index.d.ts'
+[22:48:39.259] Adding entry into typings cache: 'yargs-parser' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/yargs-parser/index.d.ts'
+[22:48:39.260] Adding entry into typings cache: 'zipkin-javascript-opentracing' => '/Users/tkubo/Library/Caches/typescript/4.7/node_modules/@types/zipkin-javascript-opentracing/index.d.ts'
+[22:48:39.260] Finished processing cache location '/Users/tkubo/Library/Caches/typescript/4.7'
+[22:48:39.260] Process id: 39233
+[22:48:39.260] NPM location: /Users/tkubo/.nodebrew/node/v16.15.1/bin/npm (explicit '--npmLocation' not  provided)
+[22:48:39.260] validateDefaultNpmLocation: false
+[22:48:39.260] Npm config file: /Users/tkubo/Library/Caches/typescript/4.7/package.json
+[22:48:39.260] Updating types-registry npm package...
+[22:48:39.260] Exec: /Users/tkubo/.nodebrew/node/v16.15.1/bin/npm install --ignore-scripts types-registry@latest
+[22:48:41.456]     Succeeded. stdout:
+    
+    up to date, audited 251 packages in 2s
+
+17 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[22:48:41.457] Updated types-registry npm package

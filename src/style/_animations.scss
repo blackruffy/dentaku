@@ -1,0 +1,94 @@
+@use "variables" as *;
+
+@keyframes cell-from-top {
+    0% {
+	background-color: $border-color;
+	transform: rotate($rotate-deg) translate(0, -100vh);
+    }
+    
+    100% {
+	background-color: $border-color;
+	transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+@keyframes cell-from-bottom {
+    0% {
+	background-color: $border-color;
+	transform: rotate($rotate-deg) translate(0, 100vh);
+    }
+    
+    100% {
+	background-color: $border-color;
+	transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+@keyframes cell-from-right {
+    0% {
+	background-color: $border-color;
+	transform: rotate($rotate-deg) translate(100vw, 0);
+    }
+    
+    100% {
+	background-color: $border-color;
+	transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+@keyframes cell-from-left {
+    0% {
+	background-color: $border-color;
+	transform: rotate($rotate-deg) translate(-100vw, 0);
+    }
+    
+    100% {
+	background-color: $border-color;
+	transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+@keyframes emph-button {
+    0% {
+	background-color: $border-color;
+    }
+    100% {
+	background-color: balck;
+    }
+}
+
+@keyframes emph-font {
+    0% {
+	font-size: 24px;
+    }
+
+    50% {
+	font-size: 36px;
+    }
+
+    100% {
+	font-size: 24px;
+    }
+}
+
+@keyframes delete-result {
+    0% {
+	color: black;
+	transform: scale(1, 1);
+    }
+
+    100% {
+	color: white;
+	transform: scale(0, 0);
+    }
+}
+
+@keyframes dialog-show {
+    0% {
+	transform: scale(0, 0);
+    }
+
+    100% {
+	transform: scale(1, 1);
+    }
+}

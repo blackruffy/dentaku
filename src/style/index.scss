@@ -1,0 +1,192 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "animations" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.result {
+    width: 100vw;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.result-box {
+    margin: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom: 1px solid $border-color;
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mb {
+	flex: 1;
+    }
+
+    @include pc {
+	width: 400px;
+    }
+}
+
+.clear-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: 8px;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.line-gap {
+    height: 32px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.clear-button:active {
+    background-color: $button-active;
+}
+
+.row {
+    position: relative;
+    display: flex;
+}
+
+.row:nth-child(odd) {
+    .cell:nth-child(odd) {
+	animation: cell-from-top $rotate-duration ease-out 0ms, emph-button $emph-button-duration ease $rotate-duration;
+    }
+
+    .cell:nth-child(even) {
+	animation: cell-from-bottom $rotate-duration ease-out 0ms, emph-button $emph-button-duration ease $rotate-duration;
+    }
+
+}
+
+.row:nth-child(even) {
+    .cell:nth-child(odd) {
+	animation: cell-from-left $rotate-duration ease-out 0ms, emph-button $emph-button-duration ease $rotate-duration;
+    }
+    
+    .cell:nth-child(even) {
+	animation: cell-from-right $rotate-duration ease-out 0ms, emph-button $emph-button-duration ease $rotate-duration;
+    }
+}
+
+.cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 3px;
+    padding: 8px;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+
+    &:active {
+	background-color:  $button-active;
+    }
+}
+
+.dialog-container {
+    position: absolute;
+    left: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-main {
+    background-color: white;
+    border: 1px solid $border-color;
+    filter: drop-shadow(0px 5px 5px #999999);
+    border-radius: 12px;
+    min-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dialog-title {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border-bottom: 1px solid $border-color;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.dialog-body {
+    padding: 16px 8px 16px 8px;
+}
+
+.dialog-button {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border-top: 1px solid $border-color;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 0px 0px 12px 12px;
+}

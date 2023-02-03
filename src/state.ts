@@ -1,8 +1,8 @@
 import { Adapter, Attrs, Listener, setAttrs } from './tag';
 
 export class State<A> {
-  readonly data: A;
-  readonly listeners: Array<[Listener<A>, HTMLElement]>;
+  private data: A;
+  private listeners: Array<[Listener<A>, HTMLElement, () => void]>;
 
   constructor(a: A) {
     this.data = a;
@@ -11,13 +11,23 @@ export class State<A> {
 
   onUpdate(f: Listener<A>): Adapter {
     return (e: HTMLElement) => {
-      this.listeners.push([f, e]);
+      const cbs = setAttrs(e, f(this.data));
+      const removeCbs = () => {
+        cbs.forEach(([n, cb]) => e.removeEventListener(n, cb));
+      };
+      this.listeners.push([f, e, removeCbs]);
     };
   }
 
   update(g: (a: A) => A): void {
-    this.listeners.forEach(([f, e]) => {
-      setAttrs(e, f(g(this.data)));
+    this.data = g(this.data);
+    this.listeners = this.listeners.map(([f, e, remove]) => {
+      remove();
+      const cbs = setAttrs(e, f(this.data));
+      const newRemove = () => {
+        cbs.forEach(([n, cb]) => e.removeEventListener(n, cb));
+      };
+      return [f, e, newRemove];
     });
   }
 }

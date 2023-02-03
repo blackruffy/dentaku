@@ -18,20 +18,30 @@ export type Listener<A> = (a: A) => Attrs;
 
 export type Adapter = (e: HTMLElement) => void;
 
-export function setAttrs(e: HTMLElement, attrs: Attrs): void {
-  Object.entries(attrs).forEach(([name, value]) =>
-    typeof value === 'string'
-      ? name === 'text'
-        ? (e.innerText = value)
-        : e.setAttribute(name, value)
-      : typeof value === 'function'
-      ? e.addEventListener(name, value)
-      : Object.entries(value as CSSStyle).forEach(([k, v]) => {
-          if (v !== undefined) {
-            e.style[k as unknown as number] = v;
-          }
-        }),
-  );
+export function setAttrs(
+  e: HTMLElement,
+  attrs: Attrs,
+): Array<[string, (event: Event) => void]> {
+  return Object.entries(attrs).flatMap(([name, value]) => {
+    if (typeof value === 'string') {
+      if (name === 'text') {
+        e.innerText = value;
+      } else {
+        e.setAttribute(name, value);
+      }
+      return [];
+    } else if (typeof value === 'function') {
+      e.addEventListener(name, value);
+      return [[name, value]];
+    } else {
+      Object.entries(value as CSSStyle).forEach(([k, v]) => {
+        if (v !== undefined) {
+          e.style[k as unknown as number] = v;
+        }
+      });
+      return [];
+    }
+  });
 }
 
 export function tag(
@@ -42,7 +52,6 @@ export function tag(
   const e =
     typeof parent === 'string' ? document.createElement(parent) : parent;
 
-  e.style;
   typeof attrs === 'function' ? attrs(e) : setAttrs(e, attrs);
 
   children.forEach(child =>

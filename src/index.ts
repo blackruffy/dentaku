@@ -14,7 +14,6 @@ window.onload = () => {
   tag(
     document.body,
     {},
-
     tag(
       'div',
       { class: 'main' },
@@ -80,7 +79,6 @@ window.onload = () => {
                       ...cur,
                       resultAnimation: 'emph-font 300ms ease 0ms',
                     };
-                    console.log(`>>>>>>>>> ${res.command}`);
                     switch (x) {
                       case '=':
                         try {
@@ -92,6 +90,7 @@ window.onload = () => {
                                 : `${evaluate(cur.command)}`,
                           };
                         } catch (err) {
+                          console.error(err);
                           return {
                             ...res,
                             dialogBody: `${
@@ -128,7 +127,10 @@ window.onload = () => {
 
       tag(
         'div',
-        { class: 'dialog-container' },
+        state.onUpdate(data => ({
+          class: 'dialog-container',
+          style: { left: data.dialogLeft },
+        })),
         tag(
           'div',
           { class: 'dialog-main' },
@@ -138,7 +140,6 @@ window.onload = () => {
             state.onUpdate(data => ({
               class: 'dialog-body',
               text: data.dialogBody,
-              style: { left: data.dialogLeft },
             })),
           ),
           tag('div', {
@@ -156,70 +157,4 @@ window.onload = () => {
       ),
     ),
   );
-
-  // const input = document.getElementsByClassName(
-  //   'result-text',
-  // )[0] as HTMLElement;
-  // input.addEventListener('animationend', () => {
-  //   input.style.animation = '';
-  //   input.innerText = state.command;
-  // });
-
-  //const ac = document.getElementsByClassName('clear-button')[0];
-  //ac.addEventListener('click', _ => {
-  //  state.command = '';
-  //  input.style.animation = 'delete-result 300ms ease 0ms';
-  //});
-
-  //const dialog = document.getElementsByClassName(
-  //  'dialog-container',
-  //)[0] as HTMLElement;
-  //const dialogMain = document.getElementsByClassName(
-  //  'dialog-main',
-  //)[0] as HTMLElement;
-  //const dialogBody = document.getElementsByClassName(
-  //  'dialog-body',
-  //)[0] as HTMLElement;
-  //const dialogButton = document.getElementsByClassName('dialog-button')[0];
-  //dialogButton.addEventListener('click', _ => {
-  //  dialog.style.left = '100vw';
-  //  dialogMain.style.animation = '';
-  //});
-
-  //const cells = Array.from(document.getElementsByClassName('cell'));
-  //for (const cell of cells) {
-  //  cell.addEventListener('click', e => {
-  //    const value = (e.target as HTMLElement).innerText;
-  //    switch (value) {
-  //      case '=':
-  //        try {
-  //          const result =
-  //            state.command === '' ? '' : `${evaluate(state.command)}`;
-  //          state.command = result;
-  //        } catch (err) {
-  //          dialogBody.innerText = `${
-  //            typeof err === 'string'
-  //              ? err
-  //              : err instanceof Error
-  //              ? err.message
-  //              : JSON.stringify(err)
-  //          }`;
-  //          dialog.style.left = '0px';
-  //          dialogMain.style.animation = 'dialog-show 300ms ease 0ms';
-  //        }
-  //        break;
-  //      case '*':
-  //      case '/':
-  //      case '-':
-  //      case '+':
-  //        state.command += ` ${value} `;
-  //        break;
-  //      default:
-  //        state.command += `${value}`;
-  //        break;
-  //    }
-  //    input.style.animation = 'emph-font 300ms ease 0ms';
-  //    input.innerText = state.command;
-  //  });
-  //}
 };

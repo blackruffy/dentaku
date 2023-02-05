@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "compile": "tsc && npm run lint",
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "serve": "webpack serve",
     "test": "jest"

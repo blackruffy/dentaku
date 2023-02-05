@@ -4,6 +4,8 @@
     "target": "ES5",
     "module": "ES2015",
     "strict": true,
-    "outDir": "dist"
-  }
+    "outDir": "dist",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"]
 }

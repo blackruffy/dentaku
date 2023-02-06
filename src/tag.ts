@@ -3,8 +3,11 @@ type CSSStyle = Readonly<{
     | 'length'
     | 'parentRule'
     | number
-    ? never
-    : CSSStyleDeclaration[Key] extends Function
+    | 'getPropertyPriority'
+    | 'getPropertyValue'
+    | 'item'
+    | 'removeProperty'
+    | 'setProperty'
     ? never
     : CSSStyleDeclaration[Key];
 }>;
@@ -104,11 +107,9 @@ export function setAttrs(e: Element, attrs: Attrs): void {
     } else if (typeof value === 'function') {
       e.addEventListener(name, value);
     } else {
-      Object.entries(value as CSSStyle).forEach(([k, v]) => {
-        if (v !== undefined) {
-          console.log(`-----> ${k}, ${v}`);
+      Object.entries(value).forEach(([k, v]) => {
+        if (v !== undefined)
           (e as HTMLElement).style[k as unknown as number] = v;
-        }
       });
     }
   });
